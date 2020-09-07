@@ -1,0 +1,41 @@
+.btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  background-color: #ff3e79;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 0;
+  transition: all 0.2s linear 0s;
+
+  &:hover {
+    filter: drop-shadow(0 0 10px #41f6d7);
+  }
+
+  &--theme_burger {
+    background-image: url("../img/icons/burger.svg");
+  }
+
+  &--theme_call {
+    background-image: url("../img/icons/call.svg");
+  }
+
+  &--theme_chat {
+    background-image: url("../img/icons/chat.svg");
+  }
+
+  &--theme_profile {
+    background-image: url("../img/icons/profile.svg");
+  }
+
+  &--theme_repair {
+    background-image: url("../img/icons/repair.svg");
+  }
+
+  &--theme_check-status {
+    background-image: url("../img/icons/check-status.svg");
+  }
+}

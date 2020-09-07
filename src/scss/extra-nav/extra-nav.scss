@@ -1,0 +1,40 @@
+.extra-nav {
+  display: flex;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-left: 16px;
+
+    &--hide_sm {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: initial;
+      }
+    }
+
+    &--decoration {
+      display: block;
+      position: relative;
+      margin-left: 42px;
+
+      &::before {
+        position: absolute;
+        left: -21px;
+        top: 3px;
+        width: 0;
+        height: 32px;
+        border: 1px solid #eaeaea;
+        border-radius: 1px;
+        content: "";
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+  }
+}

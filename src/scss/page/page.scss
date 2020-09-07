@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  box-sizing: border-box;
+
+  color: #1b1c21;
+  font-family: "TT Lakes", sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
