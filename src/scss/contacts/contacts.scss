@@ -1,0 +1,23 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    color: inherit;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--type_email {
+      margin-bottom: 12px;
+    }
+
+    &--type_phone {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: bold;
+    }
+  }
+}

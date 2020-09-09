@@ -1,0 +1,31 @@
+.navigation-menu {
+  list-style: none;
+
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &_item--active {
+    color: #7e7e82;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -4px;
+      height: 32px;
+      margin-top: -5px;
+      border-right: 8px solid #41f6d7;
+      border-radius: 4px;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    color: inherit;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
