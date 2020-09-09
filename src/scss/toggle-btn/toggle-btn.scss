@@ -1,0 +1,18 @@
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  background-color: #fff;
+  border: 0;
+  font-family: inherit;
+
+  &::before {
+    content: "";
+    background-image: url("../img/icons/read-more.svg");
+    display: block;
+    height: 10px;
+    width: 8px;
+    margin-right: 14px;
+    background-size: 8px 10px;
+  }
+}

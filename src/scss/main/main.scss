@@ -1,0 +1,39 @@
+.main {
+  background-color: #f8f8f8;
+
+  &__wrap {
+    padding: 24px 16px;
+
+    @media (min-width: 768px) {
+      padding: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      padding: 32px;
+    }
+  }
+
+  &__intro {
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1120px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__sections-nav {
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1120px) {
+      margin-bottom: 20px;
+    }
+  }
+}

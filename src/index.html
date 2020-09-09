@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -42,11 +42,85 @@
           </ul>
         </div>
       </header>
-      <main>
-        <div></div>
-        <section></section>
-        <section></section>
-        <section></section>
+      <main class="main">
+        <div class="main__wrap">
+          <div class="main__intro intro">
+            <h1 class="page-title">Услуги и сервисы</h1>
+            <div class="extra-nav">
+              <a class="extra-nav__item extra-nav__item--text" href="#">
+                <span>Оставить заявку</span>
+                <div class="extra-nav__btn btn btn--theme_repair"></div>
+              </a>
+              <a class="extra-nav__item extra-nav__item--text" href="#">
+                <span>Статус ремонта</span>
+                <div class="extra-nav__btn btn btn--theme_check-status"></div>
+              </a>
+            </div>
+          </div>
+
+          <ul class="main__sections-nav sections-nav">
+            <li
+              class="sections-nav__item sections-nav__item--active sections-nav__item--display-size-l"
+            >
+              <a class="sections-nav__link" href="#">Ремонтируемые бренды</a>
+            </li>
+            <li
+              class="sections-nav__item sections-nav__item--not-active_size-l"
+            >
+              <a class="sections-nav__link" href="#"
+                >Ремонтируемые устройства</a
+              >
+            </li>
+            <li class="sections-nav__item sections-nav__item--hidden-size-l">
+              <a class="sections-nav__link" href="#">Дополнительные услуги</a>
+            </li>
+            <li class="sections-nav__item">
+              <a class="sections-nav__link" href="#">Цены на услуги</a>
+            </li>
+            <li class="sections-nav__item">
+              <a class="sections-nav__link" href="#"
+                >Адреса сервисных центров</a
+              >
+            </li>
+            <li class="sections-nav__item">
+              <a class="sections-nav__link" href="#">Специальные цены</a>
+            </li>
+            <li class="sections-nav__item">
+              <a class="sections-nav__link" href="#">Отзывы</a>
+            </li>
+          </ul>
+
+          <section class="about-us">
+            <div class="about-us__text-container">
+              <div class="about-us__text-container-inner">
+                <p class="about-us__text about-us__text--bottom-space">
+                  Мы являемся авторизованным сервисным центром по ремонту
+                  техники Dell. Только у нас вы можете отремонтировать свой
+                  ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="about-us__text about-us__text--display_size-m">
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера<span
+                    class="about-us__hidden-text about-us__hidden-text--display_size-l"
+                    >, что подтверждает большое количество постоянных клиентов.
+                    Мы гордимся тем, что к нам обращаются по рекомендациям и, в
+                    свою очередь, советуют нас родным и близким.</span
+                  >
+                </p>
+              </div>
+              <button class="about-us__link-to-full-text toggle-btn">
+                Читать далее
+              </button>
+            </div>
+            <img
+              class="about-us__image"
+              src="./img/green-logo.png"
+              alt="Фотография логотипа компании"
+            />
+          </section>
+          <section></section>
+          <section></section>
+        </div>
       </main>
       <footer></footer>
     </div>
