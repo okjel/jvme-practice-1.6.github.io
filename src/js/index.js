@@ -1,3 +1,6 @@
-import '../scss/style.scss';
+import "../scss/style.scss";
+import "swiper/swiper-bundle.css";
 
-console.log('Works!');
+import "../scss/about-us/about-us";
+import "../scss/tiles/tiles";
+import "../scss/swiper/swiper";

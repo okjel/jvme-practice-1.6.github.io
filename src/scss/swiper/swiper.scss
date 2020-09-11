@@ -1,0 +1,26 @@
+.swiper {
+  position: relative;
+  overflow: hidden;
+
+  &--type_brands {
+    height: 110px;
+  }
+
+  &--type_devices {
+    height: 200px;
+  }
+
+  &--type_services {
+    height: 240px;
+  }
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #b5b6bc;
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+.commercial-offer {
+  max-width: 420px;
+
+  &__text {
+    margin-bottom: 16px;
+
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__btn {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1b1c21;
+  }
+
+  &__decoration-el {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: block;
+      flex-shrink: 0;
+      width: 6px;
+      height: 10px;
+      margin-left: 10px;
+      background-image: url("../img/icons/dropdown.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      content: "";
+    }
+  }
+}

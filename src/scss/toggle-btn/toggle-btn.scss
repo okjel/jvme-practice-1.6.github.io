@@ -8,11 +8,16 @@
 
   &::before {
     content: "";
-    background-image: url("../img/icons/read-more.svg");
     display: block;
     height: 10px;
     width: 8px;
     margin-right: 14px;
     background-size: 8px 10px;
+
+    background-image: url("../img/icons/arrows-down.svg");
+  }
+
+  &--show::before {
+    background-image: url("../img/icons/arrows-up.svg");
   }
 }

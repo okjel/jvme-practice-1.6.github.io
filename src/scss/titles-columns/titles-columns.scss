@@ -1,0 +1,46 @@
+.titles-columns {
+  display: none;
+
+  &::after {
+    display: block;
+    width: 119px;
+    content: "";
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+
+    color: #7e7e82;
+  }
+
+  &__el {
+    &--type_name {
+      @media (min-width: 768px) {
+        width: 52%;
+      }
+      @media (min-width: 1440px) {
+        width: 45%;
+      }
+    }
+
+    &--type_price {
+      @media (min-width: 768px) {
+        width: 14%;
+      }
+      @media (min-width: 1440px) {
+        width: 23%;
+      }
+    }
+
+    &--type_time {
+      @media (min-width: 768px) {
+        width: 16%;
+      }
+      @media (min-width: 1440px) {
+        width: 20%;
+      }
+    }
+  }
+}
