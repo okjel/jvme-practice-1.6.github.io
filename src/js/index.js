@@ -1,6 +1,9 @@
 import "../scss/style.scss";
 import "swiper/swiper-bundle.css";
+import "normalize.css";
 
-import "../scss/about-us/about-us";
-import "../scss/tiles/tiles";
-import "../scss/swiper/swiper";
+import "./about-us";
+import "./tiles";
+import "./swiper";
+import "./sidebar";
+import "./modal";

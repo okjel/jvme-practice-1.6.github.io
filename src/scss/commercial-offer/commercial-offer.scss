@@ -2,18 +2,18 @@
   max-width: 420px;
 
   &__text {
-    margin-bottom: 16px;
+    margin-bottom: $margin-main;
 
-    font-size: 14px;
+    font-size: $font-size--text;
     font-weight: 500;
   }
 
   &__btn {
     display: flex;
     flex-wrap: wrap;
-    font-size: 16px;
+    font-size: $font-size;
     text-decoration: none;
-    color: #1b1c21;
+    color: $color-dark;
   }
 
   &__decoration-el {

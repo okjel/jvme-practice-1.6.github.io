@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    margin-bottom: $margin-main;
+  }
+
+  &__terms {
+    font-size: $font-size--text;
+    line-height: 1rem;
+    color: $gray;
+
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-size: $font-size--text;
+    line-height: 1rem;
+    color: $color-main;
+  }
+
+  &__submit {
+    align-self: flex-end;
+  }
+}

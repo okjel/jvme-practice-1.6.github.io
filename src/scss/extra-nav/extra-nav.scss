@@ -9,7 +9,7 @@
     &--hide_sm {
       display: none;
 
-      @media (min-width: 768px) {
+      @media (min-width: $screen-md) {
         display: initial;
       }
     }
@@ -25,7 +25,7 @@
         top: 3px;
         width: 0;
         height: 32px;
-        border: 1px solid #eaeaea;
+        border: 1px solid $gray-light;
         border-radius: 1px;
         content: "";
       }
@@ -34,17 +34,17 @@
     &--text {
       display: none;
 
-      @media (min-width: 1440px) {
+      @media (min-width: $screen-xl) {
         display: flex;
         align-items: center;
         text-decoration: none;
         margin-left: 32px;
 
-        color: #1b1c21;
+        color: $color-dark;
         transition: filter 0.2s linear 0s;
 
         &:hover {
-          filter: drop-shadow(0 0 4px #41f6d7);
+          filter: drop-shadow(0 0 4px $color-secondary);
         }
       }
     }

@@ -2,6 +2,10 @@
   position: relative;
   overflow: hidden;
 
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+
   &--type_brands {
     height: 110px;
   }
@@ -13,14 +17,8 @@
   &--type_services {
     height: 240px;
   }
-}
 
-.swiper .swiper-pagination-bullet-active {
-  background: #b5b6bc;
-}
-
-@media (min-width: 768px) {
-  .swiper {
-    display: none;
+  & .swiper-pagination-bullet-active {
+    background: $color-dot-active;
   }
 }

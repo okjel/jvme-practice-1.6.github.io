@@ -72,6 +72,7 @@ module.exports = {
         removeComments: true,
         collapseWhitespace: false,
       },
+      favicon: "src/img/favicon.ico",
     }),
 
     // Кладем стили в отдельный файлик

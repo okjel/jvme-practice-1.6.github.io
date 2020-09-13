@@ -3,20 +3,21 @@
 
   &__item {
     margin-bottom: 32px;
-  }
 
-  &_item--active {
-    color: #7e7e82;
+    &--active {
+      color: $gray;
 
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: -4px;
-      height: 32px;
-      margin-top: -5px;
-      border-right: 8px solid #41f6d7;
-      border-radius: 4px;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -4px;
+        height: 32px;
+        margin-top: -5px;
+        border-right: 8px solid $color-secondary;
+        border-radius: 4px;
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+      }
     }
   }
 
@@ -25,7 +26,7 @@
     text-decoration: none;
     height: 100%;
     color: inherit;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $font-size;
+    line-height: 1.5em;
   }
 }

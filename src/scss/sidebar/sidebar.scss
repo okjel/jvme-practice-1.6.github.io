@@ -1,24 +1,47 @@
 .sidebar {
   display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-light, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 30;
+  overflow-y: auto;
+  overflow-x: hidden;
 
-  z-index: 1;
-  background-color: white;
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
-    16px 0px 52px rgba(14, 24, 80, 0.2);
+  @media (min-width: $screen-xl) {
+    position: absolute;
+    display: flex;
+    width: $screen-xs;
+  }
 
-  @media (min-width: 1440px) {
+  &__container {
     display: flex;
     flex-direction: column;
     position: absolute;
 
-    width: 320px;
-    height: 100%;
-    min-height: 1024px;
+    width: 100%;
+    min-height: 100%;
     top: 0;
     left: 0;
-    padding: 24px;
+    padding: $margin--size-md;
 
+    z-index: 40;
+    background-color: $color-light;
     box-shadow: none;
+
+    @media (min-width: $screen-sm) {
+      width: $screen-xs;
+      box-shadow: -2px 0px 4px rgba($color-dark, 0.02),
+        16px 0px 52px rgba($color-dark, 0.2);
+    }
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+
+      box-shadow: none;
+    }
   }
 
   &__header {
@@ -27,13 +50,20 @@
 
   &__main {
     margin-bottom: auto;
+    @media (min-width: $screen-xl) {
+      margin-bottom: 240px;
+    }
   }
 
   &__navigation {
-    margin-bottom: 16px;
+    margin-bottom: $margin-main;
   }
 
   &__contacts {
     margin-bottom: 40px;
+  }
+
+  &--show {
+    display: flex;
   }
 }

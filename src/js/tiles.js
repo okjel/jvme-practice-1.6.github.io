@@ -1,5 +1,5 @@
-import { brandsData, devicesData, servicesData } from "../../js/data";
-import { createTilesList } from "../../js/shared";
+import { brandsData, devicesData, servicesData } from "./data";
+import { createTilesList } from "./shared";
 
 var typesTilesLists = [
   {

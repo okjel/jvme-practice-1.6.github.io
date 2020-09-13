@@ -3,22 +3,22 @@
   align-items: flex-start;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-md) {
     flex-direction: row;
   }
 
   &__image {
-    max-width: 320px;
+    width: 100%;
     border-radius: 0;
     margin-left: 0;
 
-    @media (min-width: 768px) {
-      max-width: 360px;
+    @media (min-width: $screen-md) {
+      max-width: $screen-sm;
       margin-left: 36px;
       border-radius: 10px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-xl) {
       max-width: 531px;
       border-radius: 10px;
       margin-left: 36px;
@@ -27,12 +27,12 @@
 
   &__text {
     display: none;
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 16px;
+    font-size: $font-size--text;
+    line-height: 1.125rem;
+    margin-bottom: $margin-main;
 
-    @media (min-width: 768px) {
-      line-height: 20px;
+    @media (min-width: $screen-md) {
+      line-height: 1.25rem;
       margin-bottom: 20px;
     }
 
@@ -41,24 +41,24 @@
     }
 
     &:nth-child(2) {
-      @media (min-width: 768px) {
+      @media (min-width: $screen-md) {
         display: block;
       }
     }
   }
 
   &__text-container {
-    margin-bottom: 16px;
+    margin-bottom: $margin-main;
   }
 
   &__text-container-inner {
-    margin-bottom: 16px;
+    margin-bottom: $margin-main;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-md) {
       margin-bottom: 10px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-xl) {
       margin-bottom: 14px;
     }
 

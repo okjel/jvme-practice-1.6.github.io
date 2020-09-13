@@ -9,22 +9,26 @@
 .page {
   box-sizing: border-box;
 
-  color: #1b1c21;
-  font-family: "TT Lakes", sans-serif;
+  color: $color-dark;
+  font-family: $font-family;
   font-weight: 500;
-  background-color: #fff;
+  background-color: $color-light;
 
   &__container {
     display: flex;
     position: relative;
     flex-direction: column;
 
-    min-width: 320px;
+    min-width: $screen-xs;
     max-width: 1600px;
     margin: 0 auto;
 
-    @media (min-width: 1440px) {
-      padding-left: 320px;
+    @media (min-width: $screen-xl) {
+      padding-left: $screen-xs;
     }
+  }
+
+  &--lock {
+    overflow: hidden;
   }
 }

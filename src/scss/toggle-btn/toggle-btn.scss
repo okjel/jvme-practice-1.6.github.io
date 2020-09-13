@@ -17,7 +17,9 @@
     background-image: url("../img/icons/arrows-down.svg");
   }
 
-  &--show::before {
-    background-image: url("../img/icons/arrows-up.svg");
+  &--show {
+    &::before {
+      background-image: url("../img/icons/arrows-up.svg");
+    }
   }
 }

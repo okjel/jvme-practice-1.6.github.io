@@ -1,26 +1,26 @@
 .main {
-  background-color: #f8f8f8;
+  background-color: $gray-lighten;
 
   &__wrap {
-    padding: 24px 16px;
+    padding: $margin--size-md $margin-main;
 
-    @media (min-width: 768px) {
-      padding: 24px;
+    @media (min-width: $screen-md) {
+      padding: $margin--size-md;
     }
 
-    @media (min-width: 1440px) {
-      padding: 32px;
+    @media (min-width: $screen-xl) {
+      padding: $margin--size-xl;
     }
   }
 
   &__intro {
     margin-bottom: 24px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-md) {
       margin-bottom: 32px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-xl) {
       margin-bottom: 8px;
     }
   }
@@ -28,11 +28,11 @@
   &__sections-nav {
     margin-bottom: 24px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-md) {
       margin-bottom: 32px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-xl) {
       margin-bottom: 20px;
     }
   }

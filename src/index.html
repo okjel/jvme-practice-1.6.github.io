@@ -43,80 +43,84 @@
         </div>
       </header>
       <div class="sidebar">
-        <div class="sidebar__header header-menu">
-          <button class="header-menu__close btn btn--theme_close"></button>
-          <img
-            class="header-menu__logo"
-            src="./img/icons/logo.svg"
-            alt="Логотип компании"
-          />
-          <button class="btn btn--theme_search"></button>
-        </div>
-        <nav class="sidebar__main">
-          <ul class="navigation-menu">
-            <li class="navigation-menu__item navigation-menu_item--active">
-              <a class="navigation-menu__link" href="">Ремонт техники</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="">Услуги и сервисы</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href=""
-                >Корпоративным клиентам</a
-              >
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="">Продавцам техники</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="">Партнерам</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="">Производителям</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="">Наши сервисные центры</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="sidebar__footer">
-          <ul class="sidebar__navigation extra-nav">
-            <li class="extra-nav__item btn btn--theme_call">
-              <a class="extra-nav__link" href="#"></a>
-            </li>
-            <li class="extra-nav__item btn btn--theme_chat">
-              <a class="extra-nav__link" href="#"></a>
-            </li>
-            <li class="extra-nav__item btn btn--theme_profile">
-              <a class="extra-nav__link" href="#"></a>
-            </li>
-          </ul>
-          <div class="sidebar__contacts contacts">
-            <a
-              class="contacts__item contacts__item--type_email"
-              href="mailto:mail@cps.com"
-              >mail@cps.com</a
-            >
-            <a
-              class="contacts__item contacts__item--type_phone"
-              href="tel:+78008908900"
-              >8 800 890 8900</a
-            >
+        <div class="sidebar__container">
+          <div class="sidebar__header header-menu">
+            <button class="header-menu__close btn btn--theme_close"></button>
+            <img
+              class="header-menu__logo"
+              src="./img/icons/logo.svg"
+              alt="Логотип компании"
+            />
+            <button class="btn btn--theme_search"></button>
           </div>
-          <ul class="site-lang">
-            <li class="site-lang__item site-lang__item--active">
-              <button class="site-lang__btn">RU</button>
-            </li>
-            <li class="site-lang__item">
-              <button class="site-lang__btn">EN</button>
-            </li>
-            <li class="site-lang__item">
-              <button class="site-lang__btn">CH</button>
-            </li>
-          </ul>
+          <nav class="sidebar__main">
+            <ul class="navigation-menu">
+              <li class="navigation-menu__item navigation-menu__item--active">
+                <a class="navigation-menu__link" href="">Ремонт техники</a>
+              </li>
+              <li class="navigation-menu__item">
+                <a class="navigation-menu__link" href="">Услуги и сервисы</a>
+              </li>
+              <li class="navigation-menu__item">
+                <a class="navigation-menu__link" href=""
+                  >Корпоративным клиентам</a
+                >
+              </li>
+              <li class="navigation-menu__item">
+                <a class="navigation-menu__link" href="">Продавцам техники</a>
+              </li>
+              <li class="navigation-menu__item">
+                <a class="navigation-menu__link" href="">Партнерам</a>
+              </li>
+              <li class="navigation-menu__item">
+                <a class="navigation-menu__link" href="">Производителям</a>
+              </li>
+              <li class="navigation-menu__item">
+                <a class="navigation-menu__link" href=""
+                  >Наши сервисные центры</a
+                >
+              </li>
+              <li class="navigation-menu__item">
+                <a class="navigation-menu__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar__footer">
+            <ul class="sidebar__navigation extra-nav">
+              <li class="extra-nav__item btn btn--theme_call">
+                <a class="extra-nav__link" href="#"></a>
+              </li>
+              <li class="extra-nav__item btn btn--theme_chat">
+                <a class="extra-nav__link" href="#"></a>
+              </li>
+              <li class="extra-nav__item btn btn--theme_profile">
+                <a class="extra-nav__link" href="#"></a>
+              </li>
+            </ul>
+            <div class="sidebar__contacts contacts">
+              <a
+                class="contacts__item contacts__item--type_email"
+                href="mailto:mail@cps.com"
+                >mail@cps.com</a
+              >
+              <a
+                class="contacts__item contacts__item--type_phone"
+                href="tel:+78008908900"
+                >8 800 890 8900</a
+              >
+            </div>
+            <ul class="site-lang">
+              <li class="site-lang__item site-lang__item--active">
+                <button class="site-lang__btn">RU</button>
+              </li>
+              <li class="site-lang__item">
+                <button class="site-lang__btn">EN</button>
+              </li>
+              <li class="site-lang__item">
+                <button class="site-lang__btn">CH</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <main class="main">
@@ -284,10 +288,67 @@
       </footer>
     </div>
 
+    <section class="modal modal--type_chat">
+      <div class="modal__container">
+        <button class="modal__close btn btn--theme_close"></button>
+        <header class="modal__header">
+          <h1 class="page-title">Обратная связь</h1>
+        </header>
+        <div class="modal__main">
+          <form class="form" action="#">
+            <input class="form__input input" type="text" placeholder="Имя" />
+            <input class="form__input input" type="tel" placeholder="Телефон" />
+            <input
+              class="form__input input"
+              type="email"
+              placeholder="Электронная почта"
+            />
+            <textarea
+              class="form__input input input--type_textarea"
+              name=""
+              placeholder="Сообщение"
+            ></textarea>
+            <p class="form__terms">
+              Нажимая “отправить”, вы даете согласие на
+              <a class="form__link">обработку персональных данных</a> и
+              соглашаетесь с нашей
+              <a class="form__link">политикой конфиденциальности</a>
+            </p>
+            <button class="form__submit btn btn--theme_long" type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal modal--type_call">
+      <div class="modal__container">
+        <button class="modal__close btn btn--theme_close"></button>
+        <header class="modal__header">
+          <h1 class="page-title">Заказать звонок</h1>
+        </header>
+        <div class="modal__main">
+          <form class="form" action="#">
+            <input class="form__input input" type="tel" placeholder="Телефон" />
+            <p class="form__terms">
+              Нажимая “отправить”, вы даете согласие на
+              <a class="form__link">обработку персональных данных</a> и
+              соглашаетесь с нашей
+              <a class="form__link">политикой конфиденциальности</a>
+            </p>
+            <button class="form__submit btn btn--theme_long" type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <template id="brand-template">
       <li class="tiles__item tile">
         <img class="tile__img" src="" alt="Бренд" />
-        <a class="tile__about" href="#"></a>
+        <a class="tile__about btn btn--theme_about" href="#"></a>
       </li>
     </template>
 
@@ -295,7 +356,7 @@
       <div class="swiper-slide">
         <div class="tile">
           <img class="tile__img" src="" alt="Бренд" />
-          <a class="tile__about" href="#"></a>
+          <a class="tile__about btn btn--theme_about" href="#"></a>
         </div>
       </div>
     </template>
@@ -303,7 +364,10 @@
     <template id="device-template">
       <li class="tiles__item tile tile--type_device">
         <div class="tile__title"></div>
-        <a class="tile__about tile__about--type_device" href="#"></a>
+        <a
+          class="tile__about tile__about--type_device btn btn--theme_about"
+          href="#"
+        ></a>
       </li>
     </template>
 
@@ -311,7 +375,10 @@
       <div class="swiper-slide">
         <div class="tile tile--type_device">
           <div class="tile__title"></div>
-          <a class="tile__about tile__about--type_device" href="#"></a>
+          <a
+            class="tile__about tile__about--type_device btn btn--theme_about"
+            href="#"
+          ></a>
         </div>
       </div>
     </template>
@@ -323,7 +390,7 @@
         </div>
         <div class="tile__text tile__text--type_price">Бесплатно</div>
         <div class="tile__text tile__text--type_time">30-120 мин</div>
-        <a class="tile__btn" href="#">Заказать</a>
+        <a class="tile__btn btn btn--theme_long" href="#">Заказать</a>
       </li>
     </template>
 
@@ -340,7 +407,7 @@
           <div class="tile__text tile__text--type_price">Бесплатно</div>
           <div class="tile__title tile__title--type_service">Срок</div>
           <div class="tile__text tile__text--type_time">30-120 мин</div>
-          <a class="tile__btn" href="#">Заказать</a>
+          <a class="tile__btn btn btn--theme_long" href="#">Заказать</a>
         </div>
       </div>
     </template>

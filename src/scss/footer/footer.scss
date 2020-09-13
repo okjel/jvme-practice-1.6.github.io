@@ -6,15 +6,15 @@
 
   padding: 0 24px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-md) {
     flex-direction: row;
   }
 
   &__text {
-    color: #7e7e82;
-    margin-bottom: 16px;
+    color: $gray;
+    margin-bottom: $margin-main;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-md) {
       width: 30%;
     }
 

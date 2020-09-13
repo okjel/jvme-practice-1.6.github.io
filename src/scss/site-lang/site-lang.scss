@@ -2,26 +2,26 @@
   display: flex;
 
   list-style: none;
-}
 
-.site-lang__item {
-  margin-left: 7px;
-}
+  &__item {
+    margin-left: 7px;
 
-.site-lang__item--active {
-  color: #7e7e82;
-}
+    &--active {
+      color: $gray;
+    }
+  }
 
-.site-lang__btn {
-  border: 0;
-  background-color: inherit;
-  color: inherit;
-  cursor: pointer;
-  transition: all 0.2s linear 0s;
-}
+  &__btn {
+    border: 0;
+    background-color: inherit;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.2s linear 0s;
 
-.site-lang__btn:hover {
-  filter: drop-shadow(6px 6px 5px);
-  transform: scale(1.2);
-  color: black;
+    &:hover {
+      filter: drop-shadow(6px 6px 5px);
+      transform: scale(1.2);
+      color: $color-dark;
+    }
+  }
 }

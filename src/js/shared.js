@@ -75,4 +75,36 @@ function createTilesListSwiper(tilesList) {
   inflateList(tilesList.data, itemTemplate, list, tilesList.type);
 }
 
-export { toggleShowing, createTilesList, createTilesListSwiper };
+/* MODAL */
+
+function toggleShowingModal(el, elType, page) {
+  el.classList.toggle(elType + "--show");
+  page.classList.toggle("page--lock");
+}
+
+function addShowToggling(showBtns, closeBtn, elem, elemType, page) {
+  for (var i = 0; i < showBtns.length; i++) {
+    showBtns[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      toggleShowingModal(elem, elemType, page);
+    });
+  }
+
+  closeBtn.addEventListener("click", function () {
+    toggleShowingModal(elem, elemType, page);
+  });
+
+  elem.addEventListener("click", function (evt) {
+    if (!evt.target.closest(`.${elemType}__container`)) {
+      toggleShowingModal(elem, elemType, page);
+    }
+  });
+}
+
+export {
+  toggleShowing,
+  createTilesList,
+  createTilesListSwiper,
+  toggleShowingModal,
+  addShowToggling,
+};

@@ -5,7 +5,7 @@
   &__close {
     margin-right: 16px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $screen-xl) {
       display: none;
     }
   }

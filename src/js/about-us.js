@@ -1,6 +1,4 @@
-import { toggleShowing } from "../../js/shared";
-
-console.log("sdfsdf");
+import { toggleShowing } from "./shared";
 
 var rootElement = document.querySelector(".about-us");
 var content = rootElement.querySelector(".about-us__text-container-inner");

@@ -2,22 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 19px 16px;
+  padding: 19px $margin-main;
 
-  border-bottom: 1px solid #d9fff5;
+  border-bottom: 1px solid $color-border;
 
-  @media (min-width: 768px) {
-    padding: 19px 24px;
+  @media (min-width: $screen-md) {
+    padding: 19px $margin--size-md;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $screen-xl) {
     display: none;
   }
 
   &__burger-btn {
     margin-right: 16px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $screen-md) {
       margin-right: 42px;
     }
 
@@ -25,14 +25,14 @@
       display: none;
       content: "";
 
-      @media (min-width: 768px) {
+      @media (min-width: $screen-md) {
         display: block;
         position: absolute;
         right: -21px;
         top: 3px;
         width: 0;
         height: 32px;
-        border: 1px solid #eaeaea;
+        border: 1px solid $gray-light;
         border-radius: 1px;
         content: "";
       }
