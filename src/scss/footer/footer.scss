@@ -6,6 +6,8 @@
 
   padding: 0 24px;
 
+  background-color: $gray-lighten;
+
   @media (min-width: $screen-md) {
     flex-direction: row;
   }

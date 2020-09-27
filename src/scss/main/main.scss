@@ -2,38 +2,38 @@
   background-color: $gray-lighten;
 
   &__wrap {
-    padding: $margin--size-md $margin-main;
+    padding: $margin--size-md 0;
 
     @media (min-width: $screen-md) {
-      padding: $margin--size-md;
+      padding: $margin--size-md 0;
     }
 
     @media (min-width: $screen-xl) {
-      padding: $margin--size-xl;
+      padding: $margin--size-xl 0;
     }
   }
 
   &__intro {
-    margin-bottom: 24px;
+    margin: 0 $margin-main 24px;
 
     @media (min-width: $screen-md) {
-      margin-bottom: 32px;
+      margin: 0 $margin--size-md 32px;
     }
 
     @media (min-width: $screen-xl) {
-      margin-bottom: 8px;
+      margin: 0 $margin--size-xl 8px;
     }
   }
 
   &__sections-nav {
-    margin-bottom: 24px;
+    margin: 0 $margin-main 24px;
 
     @media (min-width: $screen-md) {
-      margin-bottom: 32px;
+      margin: 0 $margin--size-md 32px;
     }
 
     @media (min-width: $screen-xl) {
-      margin-bottom: 20px;
+      margin: 0 $margin--size-xl 20px;
     }
   }
 

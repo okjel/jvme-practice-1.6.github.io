@@ -2,9 +2,15 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  margin: 0 $margin-main;
 
   @media (min-width: $screen-md) {
     flex-direction: row;
+    margin: 0 $margin--size-md;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin: 0 $margin--size-xl;
   }
 
   &__image {
@@ -52,7 +58,9 @@
   }
 
   &__text-container-inner {
+    max-height: auto;
     margin-bottom: $margin-main;
+    transition: max-height 2s linear 0s;
 
     @media (min-width: $screen-md) {
       margin-bottom: 10px;
